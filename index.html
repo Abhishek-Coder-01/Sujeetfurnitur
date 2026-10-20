@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#18221c">
+    <meta name="description"
+        content="Sujeet Furniture - Premium 3D Lamination, WPC, Wooden Doors & Designer Windows in Ghazipur / Varanasi region. Direct showroom rates. Call 8115854336.">
+    <title>Sujeet Furniture | Premium Doors & Windows</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            DEFAULT: '#18221c',
+                            deep: '#101713',
+                            light: '#233028'
+                        },
+                        walnut: {
+                            DEFAULT: '#8f6239',
+                            dark: '#734e2c',
+                            light: '#b5834f',
+                            gold: '#c99a5e'
+                        },
+                        sand: {
+                            DEFAULT: '#f7f4ee',
+                            warm: '#efeae0',
+                            card: '#faf8f5'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        display: ['"Playfair Display"', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-padding-top: 86px;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+            background-color: #faf8f5;
+            color: #18221c;
+        }
+
+        :focus-visible {
+            outline: 2px solid #8f6239;
+            outline-offset: 3px;
+        }
+
+        .card-img-zoom {
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .product-card:hover .card-img-zoom {
+            transform: scale(1.05);
+        }
+
+        .marquee-track {
+            display: flex;
+            width: max-content;
+            animation: marqueeScroll 26s linear infinite;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marqueeScroll {
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .chip[aria-pressed="true"] {
+            background-color: #18221c;
+            color: #ffffff;
+            border-color: #18221c;
+            box-shadow: 0 4px 12px rgba(24, 34, 28, 0.15);
+        }
+
+        /* Floating WhatsApp Button Animation */
+        .cool-wa-pulse {
+            box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.12);
+        }
+
+        .cool-wa-pulse:hover {
+            box-shadow: 0 16px 32px -4px rgba(15, 23, 42, 0.55), 0 0 0 2px rgba(201, 154, 94, 0.4);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-walnut/20 selection:text-forest">
+
+    <!-- Reusable SVG Icons -->
+    <svg class="hidden" aria-hidden="true">
+        <symbol id="wa" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.47 0 .12 5.35.12 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.27-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.57 0 11.92-5.35 11.92-11.93 0-3.19-1.24-6.18-3.46-8.42ZM12.06 21.8a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.72.98.99-3.63-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.9 7c0 5.45-4.44 9.86-9.92 9.86Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.71.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z" />
+        </symbol>
+        <symbol id="phone" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.053 15.053 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.57 3.99c0-.55-.45-1-1-1H4.01c-.55 0-1 .45-1 1 0 9.39 7.63 17.02 17 17.02.55 0 1-.45 1-1v-3.63c0-.55-.45-1-1-1z" />
+        </symbol>
+        <symbol id="map-pin" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" />
+        </symbol>
+    </svg>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-40 border-b border-forest/10 bg-white/90 backdrop-blur-md transition-shadow">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
+            <a href="#home" class="group flex items-center gap-3.5" aria-label="Sujeet Furniture home">
+                <img src="sujeet-logo-icon.svg" alt="" width="42" height="54"
+                    class="h-11 w-9 object-contain  sm:h-12">
+                <img src="sujeet-furniture-text.svg" alt="Sujeet Furniture" width="1755" height="303"
+                    class="h-9 w-auto max-w-[190px] object-contain sm:h-10 sm:max-w-[220px]">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden items-center gap-8 text-[13px] font-semibold tracking-wide text-forest/80 lg:flex"
+                aria-label="Main Navigation">
+                <a href="#home" class="transition hover:text-walnut">Home</a>
+                <a href="#designs" class="transition hover:text-walnut">Our Designs</a>
+                <a href="#why" class="transition hover:text-walnut">Why Us</a>
+                <a href="#owner" class="transition hover:text-walnut">Owner</a>
+                <a href="#contact" class="transition hover:text-walnut">Contact &amp; Showroom</a>
+            </nav>
+
+            <!-- Desktop Action Buttons -->
+            <div class="hidden items-center gap-3 md:flex">
+                <a href="tel:+918115854336"
+                    class="inline-flex items-center gap-2 rounded-full border border-forest/20 px-4 py-2 text-xs font-bold text-forest transition hover:bg-sand hover:border-forest/40">
+                    <svg class="h-3.5 w-3.5 text-walnut" aria-hidden="true">
+                        <use href="#phone" />
+                    </svg>
+                    <span>8115854336</span>
+                </a>
+                <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture%2C%20I%20would%20like%20to%20know%20more%20about%20your%20doors%20and%20windows."
+                    target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 rounded-full bg-forest px-4 py-2 text-xs font-bold text-white shadow-sm transition hover:bg-forest-light hover:shadow">
+                    <svg class="h-3.5 w-3.5 text-green-500" aria-hidden="true">
+                        <use href="#wa" />
+                    </svg>
+                    <span>Message Us</span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mt" type="button" aria-expanded="false" aria-controls="mm" aria-label="Toggle navigation menu"
+                class="grid h-10 w-10 place-items-center rounded-xl border border-forest/15 text-forest transition hover:bg-sand lg:hidden">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <nav id="mm" class="hidden border-t border-forest/10 bg-white px-5 py-4 lg:hidden"
+            aria-label="Mobile Navigation">
+            <div class="flex flex-col gap-1 text-sm font-semibold text-forest">
+                <a href="#home" class="rounded-xl px-3 py-2.5 transition hover:bg-sand">Home</a>
+                <a href="#designs" class="rounded-xl px-3 py-2.5 transition hover:bg-sand">Our Designs</a>
+                <a href="#why" class="rounded-xl px-3 py-2.5 transition hover:bg-sand">Why Us</a>
+                <a href="#owner" class="rounded-xl px-3 py-2.5 transition hover:bg-sand">Owner Profile</a>
+                <a href="#contact" class="rounded-xl px-3 py-2.5 transition hover:bg-sand">Showroom &amp; Location</a>
+                <div class="mt-3 grid grid-cols-2 gap-2.5 pt-2 border-t border-forest/10">
+                    <a href="tel:+918115854336"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl border border-forest/20 p-2.5 text-center text-xs font-bold text-forest">
+                        <svg class="h-3.5 w-3.5 text-walnut" aria-hidden="true">
+                            <use href="#phone" />
+                        </svg> Call
+                    </a>
+                    <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture!" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center gap-2 rounded-xl bg-forest p-2.5 text-center text-xs font-bold text-white">
+                        <svg class="h-3.5 w-3.5 text-green-500" aria-hidden="true">
+                            <use href="#wa" />
+                        </svg> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home"
+            class="relative overflow-hidden bg-gradient-to-b from-white via-sand-card to-sand/40 pt-8 pb-16 lg:pt-14 lg:pb-24">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-12 lg:px-8">
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7">
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full border border-walnut/20 bg-sand px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-walnut">
+                        <span class="h-1.5 w-1.5 rounded-full bg-walnut animate-pulse"></span>
+                        Premium Doors &amp; Windows Showroom
+                    </div>
+
+                    <h1
+                        class="mt-5 font-display text-4xl font-bold leading-[1.12] tracking-tight text-forest sm:text-5xl lg:text-6xl">
+                        Upgrade Your Home with <span class="italic text-walnut">Designer Doors</span> &amp; Windows
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-base leading-relaxed text-forest/75 sm:text-lg">
+                        Discover elegant 3D Lamination, 100% waterproof WPC, solid teak doors and contemporary window
+                        frames crafted for lasting beauty, strength and prestige.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="mt-8 flex flex-wrap items-center gap-3.5">
+                        <a href="#designs"
+                            class="inline-flex items-center justify-center rounded-full bg-forest px-7 py-3.5 text-sm font-bold text-white shadow-md transition hover:bg-forest-light hover:shadow-lg">
+                            Explore Collection
+                        </a>
+                        <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture%2C%20please%20share%20catalog%20and%20prices."
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center justify-center gap-2.5 rounded-full border border-forest/20 bg-white px-6 py-3.5 text-sm font-bold text-forest shadow-sm transition hover:bg-sand hover:border-forest/40">
+                            <svg class="h-4 w-4 text-green-500" aria-hidden="true">
+                                <use href="#wa" />
+                            </svg>
+                            <span>Get Price on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="mt-12 grid max-w-lg grid-cols-3 gap-4 border-t border-forest/10 pt-6">
+                        <div>
+                            <p class="font-display text-3xl font-bold text-walnut">16+</p>
+                            <p class="mt-0.5 text-xs font-semibold text-forest/65">Signature Designs</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-3xl font-bold text-walnut">100%</p>
+                            <p class="mt-0.5 text-xs font-semibold text-forest/65">Waterproof WPC</p>
+                        </div>
+                        <div>
+                            <p class="font-display text-3xl font-bold text-walnut">Custom</p>
+                            <p class="mt-0.5 text-xs font-semibold text-forest/65">Made to Size</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Imagery -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Background glow effect -->
+                        <div class="absolute -inset-4 rounded-3xl bg-walnut/10 blur-2xl -z-10" aria-hidden="true"></div>
+
+                        <div class="grid grid-cols-12 gap-3 sm:gap-4">
+                            <!-- Main Door Image -->
+                            <div
+                                class="col-span-8 overflow-hidden rounded-t-[5rem] rounded-b-2xl border border-forest/10 bg-sand shadow-lg">
+                                <img src="https://sujeetfurnitur.lovable.app/assets/p6-BH-kspTD.jpg"
+                                    alt="Peacock Sheesham Luxury Main Door" fetchpriority="high"
+                                    class="h-[360px] sm:h-[430px] w-full object-cover transition duration-700 hover:scale-105">
+                            </div>
+
+                            <!-- Stacked side designs -->
+                            <div class="col-span-4 flex flex-col gap-3 sm:gap-4">
+                                <div class="overflow-hidden rounded-2xl border border-forest/10 bg-sand shadow-sm">
+                                    <img src="https://sujeetfurnitur.lovable.app/assets/p2-BCyzzY3C.jpg"
+                                        alt="Ivory Lily Gold 3D door"
+                                        class="h-[172px] sm:h-[207px] w-full object-cover transition duration-500 hover:scale-105">
+                                </div>
+                                <div class="overflow-hidden rounded-2xl border border-forest/10 bg-sand shadow-sm">
+                                    <img src="https://sujeetfurnitur.lovable.app/assets/p7-UWrbygKK.jpg"
+                                        alt="Noir Gold Pivot luxury door"
+                                        class="h-[172px] sm:h-[207px] w-full object-cover transition duration-500 hover:scale-105">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Ticker -->
+        <div class="overflow-hidden border-y border-forest/15 bg-forest py-3.5 text-xs font-bold uppercase tracking-[0.22em] text-white/90"
+            aria-hidden="true">
+            <div class="marquee-track gap-10 whitespace-nowrap" id="mq"></div>
+        </div>
+
+        <!-- Category Overview Cards -->
+        <section class="px-5 py-14 lg:px-8">
+            <div class="mx-auto grid max-w-7xl gap-6 md:grid-cols-2">
+                <a href="#designs" data-go="Doors"
+                    class="group relative flex items-center justify-between overflow-hidden rounded-3xl border border-forest/10 bg-white p-7 shadow-sm transition hover:shadow-md hover:border-walnut/30">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-walnut">Category 01</span>
+                        <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-forest">Premium Doors</h2>
+                        <p class="mt-2 max-w-md text-xs sm:text-sm leading-relaxed text-forest/70">
+                            3D Lamination, waterproof WPC, solid sheesham teak, luxury double main doors and interior
+                            doors.
+                        </p>
+                    </div>
+                    <div
+                        class="ml-4 grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-sand text-walnut transition group-hover:bg-forest group-hover:text-white">
+                        <span class="text-xl">&rarr;</span>
+                    </div>
+                </a>
+
+                <a href="#designs" data-go="Windows"
+                    class="group relative flex items-center justify-between overflow-hidden rounded-3xl border border-forest/10 bg-white p-7 shadow-sm transition hover:shadow-md hover:border-walnut/30">
+                    <div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-walnut">Category 02</span>
+                        <h2 class="mt-1 font-display text-2xl sm:text-3xl font-bold text-forest">Designer Windows</h2>
+                        <p class="mt-2 max-w-md text-xs sm:text-sm leading-relaxed text-forest/70">
+                            Wooden casements, hand-carved arches, louvred ventilation shutters and slim modern glazed
+                            frames.
+                        </p>
+                    </div>
+                    <div
+                        class="ml-4 grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-sand text-walnut transition group-hover:bg-forest group-hover:text-white">
+                        <span class="text-xl">&rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Product Gallery Section -->
+        <section id="designs" class="px-5 pb-20 lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <!-- Section Header + Filter Tabs -->
+                <div
+                    class="mb-10 flex flex-col justify-between gap-5 border-b border-forest/10 pb-6 md:flex-row md:items-end">
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-[0.22em] text-walnut">Handcrafted Catalog</p>
+                        <h2 class="mt-1 font-display text-3xl font-bold text-forest sm:text-4xl">Our Signature Designs
+                        </h2>
+                        <p class="mt-1.5 text-xs text-forest/65">Click any design to preview in full screen or ask price
+                            directly on WhatsApp.</p>
+                    </div>
+
+                    <!-- Filter Chips -->
+                    <div class="flex gap-2" role="group" aria-label="Filter designs by category">
+                        <button
+                            class="chip rounded-full border border-forest/20 px-5 py-2 text-xs font-bold transition hover:border-forest/40"
+                            data-f="All" aria-pressed="true">All Designs</button>
+                        <button
+                            class="chip rounded-full border border-forest/20 px-5 py-2 text-xs font-bold transition hover:border-forest/40"
+                            data-f="Doors" aria-pressed="false">Doors</button>
+                        <button
+                            class="chip rounded-full border border-forest/20 px-5 py-2 text-xs font-bold transition hover:border-forest/40"
+                            data-f="Windows" aria-pressed="false">Windows</button>
+                    </div>
+                </div>
+
+                <!-- Product Grid (Populated dynamically) -->
+                <div id="grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why" class="bg-forest px-5 py-20 text-white lg:px-8">
+            <div class="mx-auto max-w-7xl">
+                <div class="max-w-2xl">
+                    <p class="text-xs font-bold uppercase tracking-[0.24em] text-walnut-gold">The Sujeet Craftsmanship
+                    </p>
+                    <h2 class="mt-2 font-display text-3xl font-bold sm:text-4xl">
+                        Built for Endurance.<br><span class="italic text-walnut-gold">Finished for Grandeur.</span>
+                    </h2>
+                    <p class="mt-4 text-sm leading-relaxed text-white/70">
+                        Doors and windows are the first touchpoint of your home. We balance traditional timber integrity
+                        with modern weatherproof engineering.
+                    </p>
+                </div>
+
+                <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <article
+                        class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition hover:bg-white/[0.06]">
+                        <span class="font-display text-3xl font-bold text-walnut-gold">01</span>
+                        <h3 class="mt-4 text-base font-bold text-white">3D Lamination &amp; Veneer</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-white/70">
+                            Deep-grain CNC engraved foils that mimic luxurious solid carved timber without warping or
+                            fading.
+                        </p>
+                    </article>
+
+                    <article
+                        class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition hover:bg-white/[0.06]">
+                        <span class="font-display text-3xl font-bold text-walnut-gold">02</span>
+                        <h3 class="mt-4 text-base font-bold text-white">100% Waterproof WPC</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-white/70">
+                            Zero swelling, complete termite protection, and fire-retardant qualities for bathrooms,
+                            balconies and exteriors.
+                        </p>
+                    </article>
+
+                    <article
+                        class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition hover:bg-white/[0.06]">
+                        <span class="font-display text-3xl font-bold text-walnut-gold">03</span>
+                        <h3 class="mt-4 text-base font-bold text-white">Custom Dimensions</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-white/70">
+                            Every door frame is tailored to your exact builder openings, hardware preferences and custom
+                            finishes.
+                        </p>
+                    </article>
+
+                    <article
+                        class="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm transition hover:bg-white/[0.06]">
+                        <span class="font-display text-3xl font-bold text-walnut-gold">04</span>
+                        <h3 class="mt-4 text-base font-bold text-white">Transparent Pricing</h3>
+                        <p class="mt-2 text-xs leading-relaxed text-white/70">
+                            Direct showroom rates with no middleman markup. Instant estimates shared directly on
+                            WhatsApp.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Owner Section with Updated Real Portrait -->
+        <section id="owner" class="px-5 py-20 lg:px-8 bg-white">
+            <div class="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-12">
+                <!-- Owner Image Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-sm">
+                        <!-- Decorative offset frame -->
+                        <div class="absolute -bottom-3 -right-3 h-full w-full rounded-3xl bg-sand-warm -z-10"
+                            aria-hidden="true"></div>
+
+                        <div class="overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-xl">
+                            <!-- Real photo added here -->
+                            <img src="owner.jpg" alt="Owner of Sujeet Furniture at showroom" width="600" height="720"
+                                loading="lazy"
+                                class="h-[430px] sm:h-[480px] w-full object-cover object-top transition duration-500 hover:scale-[1.02]">
+                        </div>
+
+                        <!-- Verified Showroom Owner Tag -->
+                        <div
+                            class="absolute -bottom-4 left-4 right-4 rounded-2xl border border-forest/10 bg-white/95 p-3 shadow-lg backdrop-blur text-center">
+                            <p class="text-xs font-bold text-forest">Direct Owner Interaction</p>
+                            <p class="text-[10px] font-medium text-walnut">Consultation &bull; Measurement &bull; Fair
+                                Dealing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Owner Bio / Value Prop -->
+                <div class="lg:col-span-7">
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full border border-walnut/20 bg-sand px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-walnut">
+                        Meet the Founder
+                    </div>
+
+                    <h2 class="mt-3 font-display text-3xl font-bold leading-tight text-forest sm:text-4xl">
+                        Direct conversation with the person behind every door.
+                    </h2>
+
+                    <p class="mt-4 text-sm sm:text-base leading-relaxed text-forest/75">
+                        At Sujeet Furniture, we believe your main door is an emotional statement of security and
+                        welcome. You consult directly with the founder to inspect wood grains, WPC density, and 3D foil
+                        samples in person.
+                    </p>
+
+                    <ul class="mt-6 space-y-3 text-xs sm:text-sm font-medium text-forest/80">
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="grid h-5 w-5 place-items-center rounded-full bg-forest text-[11px] text-white">&check;</span>
+                            <span>Honest guidance on choosing between solid wood, WPC, and 3D lamination</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="grid h-5 w-5 place-items-center rounded-full bg-forest text-[11px] text-white">&check;</span>
+                            <span>Tailored sizes to avoid masonry breakages or misaligned hinges</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span
+                                class="grid h-5 w-5 place-items-center rounded-full bg-forest text-[11px] text-white">&check;</span>
+                            <span>Prompt replies and photo updates directly on WhatsApp</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 flex flex-wrap items-center gap-3.5">
+                        <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture%2C%20I%20would%20like%20to%20consult%20with%20the%20owner%20for%20my%20house."
+                            target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2.5 rounded-full bg-forest px-6 py-3.5 text-xs sm:text-sm font-bold text-white shadow-md transition hover:bg-forest-light">
+                            <svg class="h-4 w-4 text-green-500" aria-hidden="true">
+                                <use href="#wa" />
+                            </svg>
+                            <span>Chat with Owner on WhatsApp</span>
+                        </a>
+                        <a href="tel:+918115854336"
+                            class="inline-flex items-center gap-2 rounded-full border border-forest/20 px-5 py-3.5 text-xs sm:text-sm font-bold text-forest transition hover:bg-sand">
+                            <svg class="h-4 w-4 text-walnut" aria-hidden="true">
+                                <use href="#phone" />
+                            </svg>
+                            <span>Call +91 8115854336</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Showroom Location Section -->
+        <section id="contact" class="bg-sand px-5 py-20 lg:px-8">
+            <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-12 lg:items-center">
+                <!-- Contact Details -->
+                <div class="lg:col-span-5">
+                    <p class="text-xs font-bold uppercase tracking-[0.22em] text-walnut">Visit Our Showroom</p>
+                    <h2 class="mt-1 font-display text-3xl font-bold text-forest sm:text-4xl">Plan Your Visit</h2>
+                    <p class="mt-4 text-xs sm:text-sm leading-relaxed text-forest/70">
+                        See full-scale door models, touch the textures, check door weight and lock fittings before
+                        placing an order.
+                    </p>
+
+                    <div class="mt-8 rounded-3xl border border-forest/10 bg-white p-6 shadow-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-sand text-walnut">
+                                <svg class="h-5 w-5" aria-hidden="true">
+                                    <use href="#phone" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-[11px] font-bold uppercase tracking-wider text-walnut">Call or WhatsApp
+                                </p>
+                                <a href="tel:+918115854336"
+                                    class="mt-0.5 block text-xl sm:text-2xl font-bold text-forest hover:text-walnut transition">
+                                    +91 8115854336
+                                </a>
+                                <p class="mt-1 text-xs text-forest/60">Mon &ndash; Sat: 9:00 AM &ndash; 8:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-col gap-2.5 sm:flex-row">
+                            <a href="tel:+918115854336"
+                                class="inline-flex items-center justify-center gap-2 rounded-full bg-forest px-5 py-3 text-xs font-bold text-white transition hover:bg-forest-light">
+                                <svg class="h-3.5 w-3.5 text-walnut-gold" aria-hidden="true">
+                                    <use href="#phone" />
+                                </svg>
+                                <span>Call Directly</span>
+                            </a>
+                            <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture%2C%20please%20send%20your%20showroom%20location."
+                                target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 rounded-full border border-forest/20 px-5 py-3 text-xs font-bold text-forest transition hover:bg-sand">
+                                <svg class="h-3.5 w-3.5 text-green-500" aria-hidden="true">
+                                    <use href="#wa" />
+                                </svg>
+                                <span>Get Directions on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed -->
+                <div class="lg:col-span-7">
+                    <div class="overflow-hidden rounded-3xl border border-forest/10 bg-white shadow-sm">
+                        <iframe title="Sujeet Furniture Showroom Location"
+                            src="https://www.google.com/maps?q=25.5404396,83.2156661&z=17&hl=en&output=embed"
+                            class="h-[320px] w-full border-0 sm:h-[380px]" loading="lazy" allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div
+                            class="flex flex-wrap items-center justify-between gap-4 p-5 bg-white border-t border-forest/10">
+                            <div class="flex items-center gap-2.5 text-xs text-forest font-semibold">
+                                <svg class="h-4 w-4 text-red-500 shrink-0" aria-hidden="true">
+                                    <use href="#map-pin" />
+                                </svg>
+                                <span>Easily accessible showroom with dedicated parking</span>
+                            </div>
+                            <a href="https://www.google.com/maps?q=25.5404396,83.2156661&z=17&hl=en" target="_blank"
+                                rel="noopener noreferrer"
+                                class="rounded-full border border-forest/20 px-4 py-2 text-xs font-bold text-forest transition hover:bg-sand">
+                                Open in Google Maps &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-forest/10 bg-white px-5 pb-24 pt-12 sm:pb-8 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.7fr_1fr_1fr_1.3fr]">
+                <div>
+                    <a href="#home" class="inline-block" aria-label="Sujeet Furniture home">
+                        <span class="flex items-center gap-3">
+                            <img src="sujeet-logo-icon.svg" alt="" width="42" height="54"
+                                class="h-11 w-9 object-contain">
+                            <img src="sujeet-furniture-text.svg" alt="Sujeet Furniture" width="1755" height="303"
+                                class="h-9 w-auto max-w-[190px] object-contain">
+                        </span>
+                    </a>
+                    <p class="mt-4 max-w-xs text-sm leading-6 text-forest/60">
+                        Premium doors and windows, thoughtfully crafted to make every space feel exceptional.
+                    </p>
+                    <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture!" target="_blank"
+                        rel="noopener noreferrer"
+                        class="mt-5 inline-flex items-center gap-2 rounded-full bg-forest px-4 py-2.5 text-xs font-bold text-white transition hover:bg-forest-light">
+                        <svg class="h-4 w-4 text-green-500" aria-hidden="true">
+                            <use href="#wa" />
+                        </svg>
+                        Chat with us
+                    </a>
+                </div>
+
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-walnut">Explore</h2>
+                    <nav class="mt-4 flex flex-col items-start gap-3 text-sm text-forest/70"
+                        aria-label="Footer navigation">
+                        <a href="#home" class="transition hover:text-walnut">Home</a>
+                        <a href="#designs" class="transition hover:text-walnut">Our Designs</a>
+                        <a href="#why" class="transition hover:text-walnut">Why Choose Us</a>
+                        <a href="#owner" class="transition hover:text-walnut">Meet the Owner</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-walnut">Categories</h2>
+                    <nav class="mt-4 flex flex-col items-start gap-3 text-sm text-forest/70"
+                        aria-label="Product categories">
+                        <a href="#designs" class="transition hover:text-walnut">Premium Doors</a>
+                        <a href="#designs" class="transition hover:text-walnut">Designer Windows</a>
+                        <a href="#designs" class="transition hover:text-walnut">WPC Solutions</a>
+                        <a href="#contact" class="transition hover:text-walnut">Showroom Visit</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-[0.2em] text-walnut">Get in touch</h2>
+                    <div class="mt-4 space-y-3 text-sm text-forest/70">
+                        <a href="tel:+918115854336" class="block transition hover:text-walnut">+91 81158 54336</a>
+                        <p>Ghazipur / Varanasi region</p>
+                        <a href="#contact"
+                            class="inline-block font-semibold text-forest transition hover:text-walnut">View showroom
+                            details &rarr;</a> <br>
+                        <a href="#top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="inline-block mt-2 text-sm font-semibold
+           text-[#C47B45] hover:text-[#9F5B32]
+           transition-colors duration-300">
+                            Back to top ↑
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-10 flex flex-col justify-between gap-3 border-t border-forest/10 pt-5 text-xs text-forest/50 sm:flex-row sm:items-center">
+                <p>&copy; <span id="yr"></span> Sujeet Furniture. All rights reserved.</p>
+                <p>Designed for spaces that last.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOL LOOKING FLOATING WHATSAPP BUTTON (NORMAL SIZE & MODERN SLEEK DESIGN) -->
+    <aside aria-label="Quick contact" class="fixed bottom-5 right-5 z-50">
+        <a href="https://wa.me/918115854336?text=Hi%20Sujeet%20Furniture%2C%20I%20am%20visiting%20your%20website%20and%20would%20like%20to%20inquire."
+            target="_blank" rel="noopener noreferrer" aria-label="Chat with Sujeet Furniture on WhatsApp"
+            class="group relative inline-flex h-12 w-12 sm:h-13 sm:w-13 items-center justify-center rounded-full bg-green-500 text-white cool-wa-pulse transition duration-300 hover:scale-105 active:scale-95">
+
+            <!-- WhatsApp Icon in crisp cool white/warm accent -->
+            <svg class="h-6 w-6 text-white transition aria-hidden=" true">
+                <use href="#wa" />
+            </svg>
+
+            <!-- Sleek Tooltip on Hover (Normal & Cool Design) -->
+            <span
+                class="pointer-events-none absolute right-full mr-3 hidden whitespace-nowrap rounded-xl bg-zinc-900 px-3 py-1.5 text-xs font-semibold text-white shadow-lg ring-1 ring-white/10 group-hover:block transition">
+                Chat with Us &bull; Instant Reply
+            </span>
+        </a>
+    </aside>
+
+    <!-- Modal Lightbox Preview -->
+    <div id="lb" class="fixed inset-0 z-[60] hidden items-center justify-center bg-black/85 p-4 backdrop-blur-sm"
+        role="dialog" aria-modal="true" aria-label="Design preview">
+        <button id="lbx"
+            class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 p-0 text-xl font-bold leading-none text-forest transition hover:bg-white"
+            aria-label="Close preview">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+            </button>
+        <figure class="max-h-full max-w-2xl text-center">
+            <img id="lbi" alt="" class="max-h-[75vh] max-w-full rounded-2xl object-contain shadow-2xl mx-auto">
+            <figcaption id="lbc" class="mt-3 font-display text-lg font-bold text-white"></figcaption>
+            <div class="mt-3 flex justify-center">
+                <a id="lb-wa" href="#" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-5 py-2.5 text-xs font-bold text-white shadow ring-1 ring-white/20 transition hover:bg-black">
+                    <svg class="h-4 w-4 text-green-500" aria-hidden="true">
+                        <use href="#wa" />
+                    </svg>
+                    <span>Ask Price for this Design</span>
+                </a>
+            </div>
+        </figure>
+    </div>
+
+    <!-- Product Database & Interaction Script -->
+    <script>
+        const B = 'https://sujeetfurnitur.lovable.app/assets/';
+        const D = [
+            ['Royal Walnut Diamond', '3D Lamination Door', 'Doors', 'p1-H6QWQQxT.jpg'],
+            ['Ivory Lily Gold', '3D Lamination Door', 'Doors', 'p2-BCyzzY3C.jpg'],
+            ['Urban Charcoal Groove', 'WPC Door', 'Doors', 'p3-gBEGMNRc.jpg'],
+            ['Natural Oak Fluted', 'WPC Door', 'Doors', 'p4-DHFHaHYK.jpg'],
+            ['Classic Teak Arch', 'Wooden Door', 'Doors', 'p5-ZNME7xJS.jpg'],
+            ['Peacock Sheesham Double', 'Luxury Main Door', 'Doors', 'p6-BH-kspTD.jpg'],
+            ['Noir Gold Pivot', 'Luxury Main Door', 'Doors', 'p7-UWrbygKK.jpg'],
+            ['Pure White Glass Line', 'Modern Interior Door', 'Doors', 'p8-Desx7hGK.jpg'],
+            ['Maroon Mandala Wave', 'Decorative 3D Door', 'Doors', 'p9-o-Gg5DrO.jpg'],
+            ['Grey Walnut Inlay', 'Modern Interior Door', 'Doors', 'p10-MU4pYKmX.jpg'],
+            ['Espresso Steel Glass', 'WPC Door', 'Doors', 'p15-C6L9I1nU.jpg'],
+            ['Heritage Teak Casement', 'Wooden Window', 'Windows', 'p11-BrhXxu-v.jpg'],
+            ['Carved Walnut Arch', 'Wooden Window', 'Windows', 'p12-IpPrzSzI.jpg'],
+            ['Louvre Walnut Shutter', 'Wooden Window', 'Windows', 'p16-DPjHsuhJ.jpg'],
+            ['Slimline Black Slider', 'Modern Window', 'Windows', 'p13-BtWfayJJ.jpg'],
+            ['Oak Geometric Frame', 'Designer Window', 'Windows', 'p14-Cr0MAmt5.jpg']
+        ];
+
+        const g = document.getElementById('grid');
+        const lb = document.getElementById('lb');
+        const lbi = document.getElementById('lbi');
+        const lbc = document.getElementById('lbc');
+        const lbx = document.getElementById('lbx');
+        const lbWa = document.getElementById('lb-wa');
+
+        // Render Product Cards
+        D.forEach(([n, t, c, f]) => {
+            const a = document.createElement('article');
+            a.dataset.c = c;
+            a.className = 'product-card flex flex-col overflow-hidden rounded-2xl border border-forest/10 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:border-walnut/30';
+            const m = encodeURIComponent(`Hi Sujeet Furniture, please share price and details for "${n}" (${t}).`);
+
+            a.innerHTML = `
+                <button type="button" class="relative block overflow-hidden bg-sand text-left group" aria-label="Preview ${n}">
+                    <img src="${B + f}" alt="${n} – ${t}" loading="lazy" decoding="async" class="card-img-zoom h-72 w-full object-cover">
+                    <span class="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-forest shadow-sm backdrop-blur">
+                        ${t}
+                    </span>
+                    <span class="absolute right-3 bottom-3 rounded-full bg-black/60 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur opacity-0 group-hover:opacity-100 transition">
+                        Click to Zoom
+                    </span>
+                </button>
+                <div class="flex flex-1 flex-col p-5">
+                    <div class="flex-1">
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-walnut">${c}</span>
+                        <h3 class="mt-1 font-display text-lg font-bold leading-tight text-forest">${n}</h3>
+                    </div>
+                    <a href="https://wa.me/918115854336?text=${m}" target="_blank" rel="noopener noreferrer"
+                        class="mt-4 inline-flex items-center justify-center gap-2 rounded-xl bg-forest px-4 py-2.5 text-xs font-bold text-white transition hover:bg-forest-light">
+                        <svg class="h-3.5 w-3.5 text-green-500" aria-hidden="true"><use href="#wa"/></svg>
+                        <span>Get Price on WhatsApp</span>
+                    </a>
+                </div>
+            `;
+
+            // Open Lightbox on card image click
+            a.querySelector('button').onclick = () => {
+                lbi.src = B + f;
+                lbi.alt = n;
+                lbc.textContent = `${n} – ${t}`;
+                lbWa.href = `https://wa.me/918115854336?text=${m}`;
+                lb.classList.remove('hidden');
+                lb.classList.add('flex');
+                lbx.focus();
+            };
+
+            g.appendChild(a);
+        });
+
+        // Filter by category
+        function filt(f) {
+            document.querySelectorAll('.chip').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === f));
+            g.querySelectorAll('article').forEach(a => a.classList.toggle('hidden', f !== 'All' && a.dataset.c !== f));
+        }
+
+        document.querySelectorAll('.chip').forEach(b => b.onclick = () => filt(b.dataset.f));
+        document.querySelectorAll('[data-go]').forEach(a => a.addEventListener('click', () => filt(a.dataset.go)));
+
+        // Lightbox Close Logic
+        function cl() {
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+        }
+        lbx.onclick = cl;
+        lb.onclick = e => { if (e.target === lb) cl(); };
+
+        // Mobile Menu Toggle
+        const mt = document.getElementById('mt');
+        const mm = document.getElementById('mm');
+        function cm() {
+            mm.classList.add('hidden');
+            mt.setAttribute('aria-expanded', 'false');
+        }
+        mt.onclick = () => {
+            const o = mt.getAttribute('aria-expanded') === 'true';
+            mm.classList.toggle('hidden', o);
+            mt.setAttribute('aria-expanded', String(!o));
+        };
+        mm.querySelectorAll('a').forEach(a => a.onclick = cm);
+
+        // Escape Key
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') { cl(); cm(); }
+        });
+
+        // Marquee Content
+        const w = ['3D Lamination Doors', 'WPC Waterproof Doors', 'Solid Teak Wood Doors', 'Luxury Main Doors', 'Interior Designer Doors', 'Custom Wooden Windows'];
+        document.getElementById('mq').innerHTML = [...w, ...w, ...w, ...w].map(x => `<span>${x} &bull;</span>`).join(' ');
+
+        // Current Year in Footer
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
