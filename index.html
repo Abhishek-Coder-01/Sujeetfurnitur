@@ -7,7 +7,9 @@
     <meta name="theme-color" content="#18221c">
     <meta name="description"
         content="Sujeet Furniture - Premium 3D Lamination, WPC, Wooden Doors & Designer Windows in Ghazipur / Varanasi region. Direct showroom rates. Call 8115854336.">
-    <title>Sujeet Furniture | Premium Doors & Windows</title>
+    <title>Sujeet Furniture | Premium Doors &amp; Windows</title>
+    <link rel="icon" type="image/svg+xml" href="sujeet-logo-icon.svg">
+    <link rel="apple-touch-icon" href="sujeet-logo-icon.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +73,50 @@
 
         .product-card:hover .card-img-zoom {
             transform: scale(1.05);
+        }
+
+        .image-loader {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+            display: grid;
+            place-items: center;
+            gap: 0.55rem;
+            background: #efeae0;
+            color: #18221c;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: opacity 0.25s ease;
+        }
+
+        .image-loader::before {
+            width: 1.35rem;
+            height: 1.35rem;
+            border: 2px solid rgba(24, 34, 28, 0.18);
+            border-top-color: #8f6239;
+            border-radius: 9999px;
+            content: "";
+            animation: imageLoaderSpin 0.8s linear infinite;
+        }
+
+        .image-loader.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .image-loading {
+            opacity: 0;
+        }
+
+        .image-loaded {
+            opacity: 1;
+            transition: opacity 0.25s ease;
+        }
+
+        @keyframes imageLoaderSpin {
+            to { transform: rotate(360deg); }
         }
 
         .marquee-track {
@@ -448,7 +494,7 @@
                             <!-- Real photo added here -->
                             <img src="owner.jpg" alt="Owner of Sujeet Furniture at showroom" width="600" height="720"
                                 loading="lazy"
-                                class="h-[430px] sm:h-[480px] w-full object-cover object-top transition duration-500 hover:scale-[1.02]">
+                                class="h-[430px] sm:h-[480px] w-full object-cover object-top ">
                         </div>
 
                         <!-- Verified Showroom Owner Tag -->
@@ -750,7 +796,8 @@
 
             a.innerHTML = `
                 <button type="button" class="relative block overflow-hidden bg-sand text-left group" aria-label="Preview ${n}">
-                    <img src="${B + f}" alt="${n} – ${t}" loading="lazy" decoding="async" class="card-img-zoom h-72 w-full object-cover">
+                    <span class="image-loader" aria-hidden="true">Loading image</span>
+                    <img src="${B + f}" alt="${n} – ${t}" loading="lazy" decoding="async" class="card-img-zoom image-loading h-72 w-full object-cover transition duration-500 hover:scale-[1.02]">
                     <span class="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-forest shadow-sm backdrop-blur">
                         ${t}
                     </span>
@@ -770,6 +817,17 @@
                     </a>
                 </div>
             `;
+
+            const productImage = a.querySelector('img');
+            const imageLoader = a.querySelector('.image-loader');
+            const finishImageLoading = () => {
+                productImage.classList.remove('image-loading');
+                productImage.classList.add('image-loaded');
+                imageLoader.classList.add('is-hidden');
+            };
+            productImage.addEventListener('load', finishImageLoading, { once: true });
+            productImage.addEventListener('error', finishImageLoading, { once: true });
+            if (productImage.complete) finishImageLoading();
 
             // Open Lightbox on card image click
             a.querySelector('button').onclick = () => {
